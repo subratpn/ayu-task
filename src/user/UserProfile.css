@@ -1,10 +1,35 @@
 .user_logo{
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
+    border: 2px solid lightgrey;
+    border-radius: 50%;
     background-color: lightgrey;
-
 }
 
 .user_profile_container{
-    margin: 20px;
+    padding: 20px;
+    margin: 1% 20%;
+    border: 2px solid lightgrey;
+}
+
+.user_profile_heading{
+    font-size: 30px;
+}
+
+.user_profile_detail{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.user_call_option{
+    margin-top: 30px;
+}
+
+.user_call_button{
+    padding: 20px;
+    color: blue;
+}
+
+.user_posts{
+    margin-top: 20px;
 }

@@ -1,0 +1,16 @@
+.comment_detail_container{
+    margin: 1% 20%;
+}
+
+.user_logo{
+    height: 80px;
+    width: 80px;
+    border: 2px solid lightgrey;
+    border-radius: 50%;
+    background-color: lightgrey;
+}
+
+.comment_box {
+    margin: 4% 0;
+    min-width: 100%;
+}
