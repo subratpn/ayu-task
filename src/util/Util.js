@@ -3,6 +3,7 @@ export const findWeeksFromPresentDate = (date) => {
     const d2 = new Date();
     const days = Math.round((d2 - d1) / (24 * 60 * 60 * 1000));
     const weeks = Math.round((d2 - d1) / (7 * 24 * 60 * 60 * 1000));
+    const years = Math.round((d2 - d1) / (52 * 7 * 24 * 60 * 60 * 1000));
 
 
     if(days >= 0 && days <= 1)
@@ -11,8 +12,11 @@ export const findWeeksFromPresentDate = (date) => {
         return "Yesterday";
     else if(days > 2 && days < 7)
         return parseInt(days) + "d";
-    else if(days >= 7)
+    else if(weeks >= 1 && weeks <= 52)
         return parseInt(weeks)+"w";
+    else if(weeks > 52)
+        return parseInt(years)+"y";
+
 }
 
 export const getFormattedDate = (date) => {

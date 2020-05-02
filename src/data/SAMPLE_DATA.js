@@ -22,8 +22,8 @@ export const SAMPLE_DATA = {
                 {
                     "id": 1,
                     "description": "Nam dui. Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius. Integer ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.",
-                    "created": "11/27/2019",
-                    "lastUpdated": "10/14/2019",
+                    "created": "05/01/2020",
+                    "lastUpdated": "05/01/2020",
                     "likes": "8",
                     "user": {
                         "id": 20,
@@ -33,8 +33,8 @@ export const SAMPLE_DATA = {
                 {
                     "id": 2,
                     "description": "Aliquam sit amet diam in magna bibendum imperdiet. Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis. Fusce posuere felis sed lacus. Morbi sem mauris, laoreet ut, rhoncus aliquet, pulvinar sed, nisl. Nunc rhoncus dui vel sem. Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.",
-                    "created": "06/29/2019",
-                    "lastUpdated": "10/23/2019",
+                    "created": "06/29/2018",
+                    "lastUpdated": "10/23/2018",
                     "likes": "3",
                     "user": {
                         "id": 20,
