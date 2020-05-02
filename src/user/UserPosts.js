@@ -10,9 +10,11 @@ const UserPosts = () => {
     const posts = SAMPLE_DATA.posts;
     const history = useHistory();
     const [allPosts,setAllPosts] = useContext(AllPostsContext);
+    const [selectedPost,setSelectedPost] = useContext(SelectedPostContext);
 
-    const handlePostSelection = (event) => {
+    const handlePostSelection = (event,post) => {
         setAllPosts(posts);
+        setSelectedPost(post);
         history.push("/posts");
     };
 
@@ -21,7 +23,7 @@ const UserPosts = () => {
             <Grid container spacing={1}>
                 {posts.map(post =>
                     <Grid item md={6}>
-                        <img src={post.image} alt={"IMAGE"} className={"post_image"} onClick={(event) => handlePostSelection(event)}/>
+                        <img src={post.image} alt={"IMAGE"} className={"post_image"} onClick={(event) => handlePostSelection(event,post)}/>
                     </Grid>
                 )}
             </Grid>

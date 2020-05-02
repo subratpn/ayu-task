@@ -20,6 +20,9 @@ const PostDetail = () => {
         if (allPosts.length === 0) {
             window.location = "/";
         }
+        else{
+            document.getElementById(selectedPost.id).scrollIntoView();
+        }
     }, [])
 
     const handleLike = (event, post) => {
@@ -40,7 +43,7 @@ const PostDetail = () => {
     return (
         <div className={"post_detail_container"}>
             {allPosts.map(post => (
-                <div style={{marginBottom: 20}}>
+                <div style={{marginBottom: 20}} id={post.id}>
                     <img src={post.image} alt={"Image"} width={"100%"} height={"400px"}/>
                     <span>
                         <Button onClick={(event) => handleLike(event, post)}><FavoriteBorderIcon/></Button>
